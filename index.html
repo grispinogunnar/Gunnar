@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Gunnar Grispino</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="#">Gunnar Grispino</a>
+      <button id="darkModeToggle" class="btn btn-outline-light ms-3">Dark Mode</button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header id="hero">
+    <div class="container">
+      <h1>Welcome to My Portfolio</h1>
+      <p class="lead">I'm Gunnar, a December 2024 computer science graduate and aspiring developer.</p>
+      <a href="contact.html" class="btn btn-light">Contact Me</a>
+    </div>
+  </header>
+
+<!-- Featured Projects Section -->
+<section id="projects">
+    <div class="container">
+      <h2 class="text-center mb-4">Featured Projects</h2>
+      <div class="row">
+        <!-- Project 1: LiftSmart -->
+        <div class="col-md-4">
+          <div class="card">
+            <img src="images/liftsmart.jpg" class="card-img-top" alt="LiftSmart">
+            <div class="card-body">
+              <h5 class="card-title">LiftSmart</h5>
+              <p class="card-text">AI-integrated workout generation and tracking web app built with Flask.</p>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#liftSmartModal">View Details</button>
+            </div>
+          </div>
+        </div>
+        <!-- Project 2: Squat Analyzer -->
+        <div class="col-md-4">
+          <div class="card">
+            <img src="images/squatanalyzer.jpg" class="card-img-top" alt="Squat Analyzer">
+            <div class="card-body">
+              <h5 class="card-title">Squat Analyzer</h5>
+              <p class="card-text">OpenCV and Python-based project for barbell tracking and depth analysis in weightlifting videos.</p>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#squatAnalyzerModal">View Details</button>
+            </div>
+          </div>
+        </div>
+        <!-- Project 3: IoT Greenhouse Project -->
+        <div class="col-md-4">
+          <div class="card">
+            <img src="images/iotgreenhouse.jpg" class="card-img-top" alt="IoT Greenhouse Project">
+            <div class="card-body">
+              <h5 class="card-title">IoT Greenhouse Project</h5>
+              <p class="card-text">IoT project that tracks live sensor readings and notifies greenhouse managers if any system failures are detected.</p>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#iotGreenhouseModal">View Details</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Modals -->
+  <!-- LiftSmart Modal -->
+  <div class="modal fade" id="liftSmartModal" tabindex="-1" aria-labelledby="liftSmartModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="liftSmartModalLabel">LiftSmart</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p><strong>Description:</strong> AI-integrated workout generation and tracking web app built with Flask.</p>
+          <p><strong>Technologies:</strong> Flask, Python, HTML, CSS, Bootstrap, SQLite, GPT-4</p>
+          <p><strong>Features:</strong></p>
+          <ul>
+            <li>AI-integrated, personalized workout recommendations</li>
+            <li>Progress tracking and data visualization</li>
+            <li>Integration with GPT-4 for advanced suggestions</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <!-- <a href="https://github.com/yourusername/liftsmart" target="_blank" class="btn btn-primary">View on GitHub</a> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Squat Analyzer Modal -->
+  <div class="modal fade" id="squatAnalyzerModal" tabindex="-1" aria-labelledby="squatAnalyzerModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="squatAnalyzerModalLabel">Squat Analyzer</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p><strong>Description:</strong> OpenCV and Python-based project for barbell tracking and depth analysis in weightlifting videos.</p>
+          <p><strong>Technologies:</strong> OpenCV, Python, Pandas, PyQt</p>
+          <p><strong>Features:</strong></p>
+          <ul>
+            <li>Real-time barbell tracking in weightlifting videos</li>
+            <li>Depth analysis to improve squat form</li>
+            <li>Detailed video analysis through OpenCV</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <!-- <a href="https://github.com/yourusername/squatanalyzer" target="_blank" class="btn btn-primary">View on GitHub</a> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- IoT Greenhouse Modal -->
+  <div class="modal fade" id="iotGreenhouseModal" tabindex="-1" aria-labelledby="iotGreenhouseModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="iotGreenhouseModalLabel">IoT Greenhouse Project</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p><strong>Description:</strong> IoT project that tracks live sensor readings and notifies greenhouse managers of abnormal readings.</p>
+          <p><strong>Technologies:</strong> Arduino, C++, ESP32, Soil sensors</p>
+          <p><strong>Features:</strong></p>
+          <ul>
+            <li>Live monitoring of soil conditions</li>
+            <li>Automatic notifications for abnormal readings</li>
+            <li>Radio-based data transmission</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <!-- <a href="https://github.com/yourusername/iotgreenhouse" target="_blank" class="btn btn-primary">View on GitHub</a> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Footer -->
+  <footer class="text-center py-3">
+    <p>&copy; 2024 Gunnar Grispino</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/scripts.js"></script>
+</body>
+</html>

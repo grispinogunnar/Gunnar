@@ -1,0 +1,114 @@
+/* Define Theme Variables */
+:root {
+    --background-color: #ffffff;
+    --text-color: #000000;
+    --card-background-color: #f8f9fa;
+    --card-text-color: #000000;
+    --navbar-background-color: #343a40;
+    --button-background-color: #007bff;
+    --button-text-color: #ffffff;
+    --hero-background-color: #007bff;
+    --hero-text-color: #ffffff;
+    --featured-projects-background-color: #f8f9fa;
+    --featured-projects-text-color: #000000;
+    --modal-background-color: #ffffff;
+    --modal-text-color: #000000;
+    --modal-header-footer-background: #f1f1f1;
+    --modal-border-color: #dddddd;
+  }
+  
+  /* Dark Mode Theme Variables */
+  body.dark-mode {
+    --background-color: #121212;
+    --text-color: #ffffff;
+    --card-background-color: #1e1e1e;
+    --card-text-color: #ffffff;
+    --navbar-background-color: #212529;
+    --button-background-color: #0056b3;
+    --button-text-color: #ffffff;
+    --hero-background-color: #1a1a40;
+    --hero-text-color: #ffffff;
+    --featured-projects-background-color: #1e1e1e;
+    --featured-projects-text-color: #ffffff;
+    --modal-background-color: #1e1e1e;
+    --modal-text-color: #ffffff;
+    --modal-header-footer-background: #333333;
+    --modal-border-color: #444444;
+  }
+  
+  
+  
+  /* General Styles */
+  body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .navbar {
+    background-color: var(--navbar-background-color);
+  }
+  
+  .card {
+    background-color: var(--card-background-color);
+    color: var(--card-text-color);
+    border-color: var(--card-background-color);
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .btn-primary {
+    background-color: var(--button-background-color);
+    color: var(--button-text-color);
+    border-color: var(--button-background-color);
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  /* Hero Section */
+  #hero {
+    background-color: var(--hero-background-color);
+    color: var(--hero-text-color);
+    text-align: center;
+    padding: 60px 0;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  /* Featured Projects Section */
+  #projects {
+    background-color: var(--featured-projects-background-color);
+    color: var(--featured-projects-text-color);
+    padding: 60px 0;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  #projects h2 {
+    color: var(--featured-projects-text-color);
+  }
+  
+/* Modal Content */
+.modal-content {
+    background-color: var(--modal-background-color);
+    color: var(--modal-text-color);
+    border-color: var(--modal-border-color);
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  /* Modal Header and Footer */
+  .modal-header,
+  .modal-footer {
+    background-color: var(--modal-header-footer-background);
+    color: var(--modal-text-color);
+    border-color: var(--modal-border-color);
+  }
+  
+  /* Modal Close Button */
+  .modal-header .btn-close {
+    color: var(--modal-text-color);
+    opacity: 0.8;
+  }
+  
+  .modal-header .btn-close:hover {
+    opacity: 1;
+  }
+  
+  
+  
