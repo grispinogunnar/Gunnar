@@ -21,7 +21,7 @@
   <header id="hero">
     <div class="container">
       <h1>Welcome to My Portfolio</h1>
-      <p class="lead">I'm Gunnar, a December 2024 computer science graduate wanting to break into the tech field.</p>
+      <p class="lead">I'm Gunnar, a December 2024 computer science graduate and current IT technician looking to break into software engineering.</p>
     </div>
   </header>
 
@@ -36,7 +36,7 @@
             <img src="images/liftsmart.jpg" class="card-img-top" alt="LiftSmart">
             <div class="card-body">
               <h5 class="card-title">LiftSmart</h5>
-              <p class="card-text">AI-integrated workout generation and tracking web app.</p>
+              <p class="card-text">API Wrapper/Workout logging database for OpenAI's GPT-4o Mini</p>
               <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#liftSmartModal">View Details</button>
             </div>
           </div>
@@ -74,11 +74,32 @@
             </div>
           </div>
         </div>
+        <!-- Project 5: Gunnarnary.com -->
+        <div class="col-md-4">
+          <div class="card">
+            <img src="images/gunnarnary.png" class="card-img-top" alt="Gunnarnary">
+            <div class="card-body">
+              <h5 class="card-title">Gunnarnary</h5>
+              <p class="card-text">Pictionary clone web-app featuring real-time communication for seamless gameplay.</p>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#gunnarnaryModal">View Details</button>
+            </div>
+          </div>
+        </div>
+        <!-- Project 6: Epic Beer Games -->
+        <div class="col-md-4">
+          <div class="card">
+            <img src="images/wip.jpg" class="card-img-top" alt="EpicBeerGames">
+            <div class="card-body">
+              <h5 class="card-title">Epic Beer Games</h5>
+              <p class="card-text">Full-stack C# Desktop Application in the style of Jackbox Party Pack.</p>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#epicBeerGamesModal">View Details</button>
+            </div>
+          </div>
+        </div>
         <!-- -->
       </div>
     </div>
   </section>
-  
   <!-- Modals -->
   <!-- LiftSmart Modal -->
   <div class="modal fade" id="liftSmartModal" tabindex="-1" aria-labelledby="liftSmartModalLabel" aria-hidden="true">
@@ -129,7 +150,7 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <a href="https://drive.google.com/file/d/13ycHC6m2LtbuqpQjS40G47STfWKU-ZrQ/view?usp=sharing" target="_blank" class="btn btn-primary">View on Google Drive</a>
+          <!-- <a href="https://drive.google.com/file/d/13ycHC6m2LtbuqpQjS40G47STfWKU-ZrQ/view?usp=sharing" target="_blank" class="btn btn-primary">View on Google Drive</a> -->
         </div>
       </div>
     </div>
@@ -166,7 +187,7 @@
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="liftSmartModalLabel">LiftSmart</h5>
+            <h5 class="modal-title" id="steamMetricsModal">SteamMetrics</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
@@ -181,7 +202,61 @@
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <a href="https://github.com/grispinogunnar/portfolio/tree/1663427416de1c1d688ed3e935c46c7a3ccecb76/tools/steammetrics" target="_blank" class="btn btn-primary">View on GitHub</a>
+            <!-- <a href="https://github.com/grispinogunnar/portfolio/tree/1663427416de1c1d688ed3e935c46c7a3ccecb76/tools/steammetrics" target="_blank" class="btn btn-primary">View on GitHub</a> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Gunnarnary Modal -->
+    <div class="modal fade" id="gunnarnaryModal" tabindex="-1" aria-labelledby="gunnarnaryModal" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="gunnarnaryModalLabel">Gunnarnary</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p><strong>Description:</strong> Web application allowing users to seamlessly play a pictionary-esque game, featuring real-time updates and communication.</p>
+            <p><strong>Technologies:</strong> PHP, JS, HTML, CSS, Nginx</p>
+            <p><strong>Features:</strong></p>
+            <ul>
+              <li>Websocket-based communication allows users to simultaneously send/receive data in near real-time.</li>
+              <li>Served via Nginx.</li>
+              <li>Built using pure PHP, JS, HTML, and CSS.</li>
+              <li>Hosted on Raspberry Pi 4.</li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <a href="https://www.gunnarnary.com" target="_blank" class="btn btn-primary">Check it out!</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Epic Beer Games Modal -->
+    <div class="modal fade" id="epicBeerGamesModal" tabindex="-1" aria-labelledby="epicBeerGamesModal" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="epicBeerGamesModalLabel">Epic Beer Games</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p><strong>Heavily WIP - Stay tuned or ask me about it!</strong></p>
+            <!-- <p><strong>Description:</strong> Desktop tool that allows users to pull information from their Steam account and perform various queries and visualizations.</p>
+            <p><strong>Technologies:</strong></p>
+            <p><strong>Features:</strong></p>
+            <ul>
+              <li>Pull user data from the Steam web api and perform various queries</li>
+              <li>Visually view certain metrics using matplotlib</li>
+              <li>Dynamic data handling based on Pandas dataframes</li>
+            </ul>
+          </div> -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <!-- <a href="" target="_blank" class="btn btn-primary">View</a> -->
           </div>
         </div>
       </div>
